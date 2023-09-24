@@ -1,11 +1,12 @@
 {
-  "name": "backend",
+  "name": "cse341-project",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon app.js",
+    "star-prod": "node app.js"
   },
   "author": "",
   "license": "ISC",
