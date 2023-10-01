@@ -32,7 +32,7 @@ content-type: application/json
     "birthday":"12/12/20"
 }
 ### DELETE contact
-DELETE http://localhost:8080/contacts/65183a89c726643d1048d53d HTTP/1.1
+DELETE http://localhost:8080/contacts/6518d1eddf5f7a458e145622 HTTP/1.1
 
 // PRODUCTION Deploy
 ###
