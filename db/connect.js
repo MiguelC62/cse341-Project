@@ -1,7 +1,6 @@
 const dotenv = require("dotenv");
 dotenv.config();
 const MongoClient = require('mongodb').MongoClient;
-const MONGODB_URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.hmvk6uf.mongodb.net/?authSource=admin`;
 
 let _db;
 
