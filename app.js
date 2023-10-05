@@ -8,7 +8,7 @@ const app = express();
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://miguelc62.onrender.com');
+    res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
   .use('/', require('./routes'));
