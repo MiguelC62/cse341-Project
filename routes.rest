@@ -28,11 +28,12 @@ content-type: application/json
     "firstName":"Sarah",
     "lastName":"Birch",
     "email":"test@gmail.com",
-    "favoriteColor":"Green",
+    "favoriteColor":"Yelow",
     "birthday":"12/12/20"
 }
 ### DELETE contact
-DELETE http://localhost:8080/contacts/6518d1eddf5f7a458e145622 HTTP/1.1
+DELETE http://localhost:8080/contacts/6518f1dddf5f7a458e145623 HTTP/1.1
+
 
 
 // PRODUCTION Deploy
@@ -65,9 +66,9 @@ content-type: application/json
     "firstName":"Sarah",
     "lastName":"Birch",
     "email":"sarahB@gmail.com",
-    "favoriteColor":"Yellow",
+    "favoriteColor":"Green",
     "birthday":"06/12/20"
 }
 
 ### DELETE contact
-DELETE https://miguelc62.onrender.com/contacts/65180f8de2c0fc4793f354b0 HTTP/1.1
+DELETE https://miguelc62.onrender.com/contacts/651e00149e94262e3d3ee6ac HTTP/1.1
