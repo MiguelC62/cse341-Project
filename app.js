@@ -2,11 +2,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 
+const cors = require('cors');
+
 const port = process.env.PORT || 8080;
 const app = express();
 
 app
   .use(bodyParser.json())
+  .use(cors({
+    origin: 'https://cse341-contacts-frontend.netlify.app'
+  }))
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
