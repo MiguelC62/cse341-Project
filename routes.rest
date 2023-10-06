@@ -28,11 +28,12 @@ content-type: application/json
     "firstName":"Sarah",
     "lastName":"Birch",
     "email":"test@gmail.com",
-    "favoriteColor":"Yelow",
+    "favoriteColor":"Green",
     "birthday":"12/12/20"
 }
 ### DELETE contact
-DELETE http://localhost:8080/contacts/6518f1dddf5f7a458e145623 HTTP/1.1
+DELETE http://localhost:8080/contacts/65207df603a2a70622a9851a HTTP/1.1
+
 
 
 
@@ -71,4 +72,4 @@ content-type: application/json
 }
 
 ### DELETE contact
-DELETE https://miguelc62.onrender.com/contacts/651e00149e94262e3d3ee6ac HTTP/1.1
+DELETE https://miguelc62.onrender.com/contacts/65207df603a2a70622a9851a HTTP/1.1
