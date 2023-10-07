@@ -9,9 +9,9 @@ const app = express();
 
 app
   .use(bodyParser.json())
- // .use(cors({
- //   origin: 'https://cse341-contacts-frontend.netlify.app'
- // }))
+  .use(cors({
+    origin: 'https://cse341-contacts-frontend.netlify.app'
+  }))
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Key, Authorization");
