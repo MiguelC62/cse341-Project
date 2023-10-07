@@ -60,16 +60,16 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT https://miguelc62.onrender.com/contacts/65160c9af6f043f42f7785fe HTTP/1.1
+PUT https://miguelc62.onrender.com/contacts/6520bbf8033c4bb9e4577b9d HTTP/1.1
 content-type: application/json
 
 {
     "firstName":"Sarah",
     "lastName":"Birch",
     "email":"sarahB@gmail.com",
-    "favoriteColor":"Green",
+    "favoriteColor":"Yellow",
     "birthday":"06/12/20"
 }
 
 ### DELETE contact
-DELETE https://miguelc62.onrender.com/contacts/65207df603a2a70622a9851a HTTP/1.1
+DELETE https://miguelc62.onrender.com/contacts/6520c059033c4bb9e4577b9e HTTP/1.1
