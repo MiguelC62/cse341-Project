@@ -21,5 +21,12 @@
     "email": "AndersonC@test.com",
     "favoriteColor": "Yellow",
     "birthday": "02/22/95"
+  },
+  "contacts4": {
+    "firstName":"Vanina",
+    "lastName":"Condori",
+    "email":"vanina@unsa.edu",
+    "favoriteColor":"Yellow",
+    "birthday":"10/13/1993"
   }
 }
