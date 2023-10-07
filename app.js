@@ -2,27 +2,27 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 
-const cors = require('cors');
+//const cors = require('cors');
 
 const port = process.env.PORT || 8080;
 const app = express();
 
 app
   .use(bodyParser.json())
-  .use(cors({
-    origin: 'https://cse341-contacts-frontend.netlify.app'
-  }))
+ // .use(cors({
+ //   origin: 'https://cse341-contacts-frontend.netlify.app'
+ // }))
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Key, Authorization");
-    res.setHeader("Content-Type","application/json" );
-    res.setHeader(
-      "Access-Control-Allow-Methods",
-      "OPTIONS, GET, POST, PUT, PATCH, DELETE"
-    );
-    if (req.method === "OPTIONS") {
-      return res.sendStatus(200);
-    }
+    //res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Key, Authorization");
+   // res.setHeader("Content-Type","application/json" );
+   // res.setHeader(
+    //  "Access-Control-Allow-Methods",
+    //  "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+    //);
+    //if (req.method === "OPTIONS") {
+    //  return res.sendStatus(200);
+    //}
     next();
   })
   .use('/', require('./routes'));
