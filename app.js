@@ -19,6 +19,7 @@ app
       "OPTIONS, GET, POST, PUT, PATCH, DELETE"
     );
     res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.setHeader("Content-Type","application/json" );
     if (req.method === "OPTIONS") {
       return res.sendStatus(200);
     }
